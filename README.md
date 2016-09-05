@@ -1,0 +1,2 @@
+# Master-Project-on-Differential-Privacy
+Analysis of a survey on Problems faced by International Students in Germany from Application to Arrival. The main aim is to provide complete anonymity, check the amount of privacy attained for different levels of randomisation. Thereby, creating a complete picture of the study of different issues ; for furture reference. PS  : The scope of project is subject to change.
