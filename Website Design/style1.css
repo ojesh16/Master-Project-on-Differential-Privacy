@@ -1,0 +1,15 @@
+.backgr {
+	background-color: #ddcbcb;
+	border-radius: : 10px ;
+	border: 1px black solid;
+	padding: 20px;
+    
+}
+
+.imag{
+	align-items: center;
+}
+
+.btn .btn-default {
+	background-color: #ddcbcb;
+}
