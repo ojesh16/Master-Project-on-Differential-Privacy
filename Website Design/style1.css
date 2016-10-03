@@ -13,3 +13,16 @@
 .btn .btn-default {
 	background-color: #ddcbcb;
 }
+
+.Dtitle {
+	font-size: 30px;
+	color: orange;
+}
+
+.surveyques{
+	height:450px;
+	width:1000px;
+	border:1px solid #ccc;
+	font:16px/26px Georgia, Garamond, Serif;
+	overflow:auto; 
+}
