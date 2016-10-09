@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#daad1").click(function(){
+        $("#panel").slideDown("slow");
+    });
+    $("#daad2").click(function(){
+        $("#panel").slideUp("slow");
+    });
+
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#RD_Entry1").click(function(){
+        $("#panel1").slideDown("slow");
+    });
+    $("#RD_Entry2").click(function(){
+        $("#panel1").slideUp("slow");
+    });
+
+});
+</script>
+<style>
+#panel, #daad1, #daad2, #RD_Entry1, #RD_Entry2, #panel1 {
+    padding: 1px;
+    text-align: left;
+    
+}
+
+#panel, #panel1 {
+    padding: 20px;
+    display: none;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+	<img src="http://placehold.it/1325x200" class="img-fluid" alt="Responsive image">
+</div><br><br>
+<div class="container">
+	<p>How much hard was it to find a course that is suitable for you and your career?</p>
+	<input type="radio" name="course">1
+	<input type="radio" name="course">2
+	<input type="radio" name="course">3
+	<input type="radio" name="course">4
+	<input type="radio" name="course">5
+	<br><br>
+	<p>How hard was it to find a course of your choice in a language preferable for you?</p>
+	<input type="radio" name="course_lang">1
+	<input type="radio" name="course_lang">2
+	<input type="radio" name="course_lang">3
+	<input type="radio" name="course_lang">4
+	<input type="radio" name="course_lang">5
+	<br><br>
+
+	<p>Are you aware of DAAD website?</p>
+	<input type="radio" id="daad1" name="daad">Yes
+	<input type="radio" id="daad2" name="daad">No
+	<br><br>
+	<div id="panel"><span>
+	<p>How do you rate the information provided on the DAAD website?</p>
+	<input type="radio" name="daadrate">1
+	<input type="radio" name="daadrate">2
+	<input type="radio" name="daadrate">3
+	<input type="radio" name="daadrate">4
+	<input type="radio" name="daadrate">5
+	</span>
+	</div>
+	<br><br>
+	<p>How do you rate the information provided on the University websites?</p>
+	<input type="radio" name="Universityrate">1
+	<input type="radio" name="Universityrate">2
+	<input type="radio" name="Universityrate">3
+	<input type="radio" name="Universityrate">4
+	<input type="radio" name="Universityrate">5
+	<br><br>
+
+	<p>Are you aware of restricted entry and direct entry application procedure?</p>
+	<input type="radio" id="RD_Entry1" name="RD_Entry">Yes
+	<input type="radio" id="RD_Entry2" name="RD_Entry" >No
+	<br><br>
+	<div id="panel1"><span>
+	<p>How comfortable do you feel regarding the application procedures?</p>
+	<input type="radio" name="app_proc">1
+	<input type="radio" name="app_proc">2
+	<input type="radio" name="app_proc">3
+	<input type="radio" name="app_proc">4
+	<input type="radio" name="app_proc">5
+	</span>
+	</div>
+	
+
+</div>
+</body>
+</html>
