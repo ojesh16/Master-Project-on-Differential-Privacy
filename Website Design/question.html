@@ -32,14 +32,38 @@ $(document).ready(function(){
 
 });
 </script>
+<script>
+$(document).ready(function(){
+    $("#Uni_assist1").click(function(){
+        $("#uni_assist_r").slideDown("slow");
+    });
+    $("#Uni_assist2").click(function(){
+        $("#uni_assist_r").slideUp("slow");
+    });
+
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#Studentenwerk1").click(function(){
+        $("#Studentenwerk").slideDown("slow");
+    });
+    $("#Studentenwerk2").click(function(){
+        $("#Studentenwerk").slideUp("slow");
+    });
+
+});
+</script>
+
 <style>
-#panel, #daad1, #daad2, #RD_Entry1, #RD_Entry2, #panel1 {
+#panel, #daad1, #daad2, #RD_Entry1, #RD_Entry2, #panel1, #uni_assist_r, 
+#Uni_assist1, #Uni_assist2, #Studentenwerk, #Studentenwerk1, #Studentenwerk2 {
     padding: 1px;
     text-align: left;
     
 }
 
-#panel, #panel1 {
+#panel, #panel1, #uni_assist_r, #Studentenwerk  {
     padding: 20px;
     display: none;
 }
@@ -50,7 +74,9 @@ $(document).ready(function(){
 	<img src="http://placehold.it/1325x200" class="img-fluid" alt="Responsive image">
 </div><br><br>
 <div class="container">
-	<p>How much hard was it to find a course that is suitable for you and your career?</p>
+<fieldset class="form-group">
+<div><b>Selecting a Course</b>
+	<p><br>How much hard was it to find a course that is suitable for you and your career?</p>
 	<input type="radio" name="course">1
 	<input type="radio" name="course">2
 	<input type="radio" name="course">3
@@ -64,35 +90,63 @@ $(document).ready(function(){
 	<input type="radio" name="course_lang">4
 	<input type="radio" name="course_lang">5
 	<br><br>
-
-	<p>Are you aware of DAAD website?</p>
+</div>
+</fieldset>
+<fieldset class="form-group">
+<div><b>Information provided on the Universities Database - DAAD</b> <br>
+	<p><br>Are you aware of the website DAAD - German National Academic Database?</p>
 	<input type="radio" id="daad1" name="daad">Yes
 	<input type="radio" id="daad2" name="daad">No
-	<br><br>
 	<div id="panel"><span>
-	<p>How do you rate the information provided on the DAAD website?</p>
+	<p>How do you rate the overall information provided on the DAAD website? </p>
 	<input type="radio" name="daadrate">1
 	<input type="radio" name="daadrate">2
 	<input type="radio" name="daadrate">3
 	<input type="radio" name="daadrate">4
 	<input type="radio" name="daadrate">5
+	<br><br>
+	<p>How much helpful was the information on the DAAD website?</p>
+	<input type="radio" name="daad_info">1
+	<input type="radio" name="daad_info">2
+	<input type="radio" name="daad_info">3
+	<input type="radio" name="daad_info">4
+	<input type="radio" name="daad_info">5
+	<br><br>
+	<p>How easy was it to search for a University using DAAD website?</p>
+	<input type="radio" name="daadsearch">1
+	<input type="radio" name="daadsearch">2
+	<input type="radio" name="daadsearch">3
+	<input type="radio" name="daadsearch">4
+	<input type="radio" name="daadsearch">5
+	<br><br>
 	</span>
 	</div>
-	<br><br>
-	<p>How do you rate the information provided on the University websites?</p>
+</div>
+</fieldset>
+	<br>
+<fieldset class="form-group">
+<div><b>Information provided on the chosen University website</b>
+	<p><br>How do you rate the information provided on the chosen University website?</p>
 	<input type="radio" name="Universityrate">1
 	<input type="radio" name="Universityrate">2
 	<input type="radio" name="Universityrate">3
 	<input type="radio" name="Universityrate">4
 	<input type="radio" name="Universityrate">5
 	<br><br>
-
-	<p>Are you aware of restricted entry and direct entry application procedure?</p>
+	<p>How often do you find additional information on the website that might help for a living in Germany?</p>
+	<input type="radio" name="Uni_add_info">Yes
+	<input type="radio" name="Uni_add_info">No
+	<br><br>
+</div>
+</fieldset>
+<fieldset class="form-group">
+<div><b> Application Procedures</b>
+	<p><br>Are you aware of different application procedures (Restricted &#38 Open entry courses)?</p>
 	<input type="radio" id="RD_Entry1" name="RD_Entry">Yes
 	<input type="radio" id="RD_Entry2" name="RD_Entry" >No
-	<br><br>
+	<br>
 	<div id="panel1"><span>
-	<p>How comfortable do you feel regarding the application procedures?</p>
+	<p>How do you rate your level of comfort regarding the application procedures for the universities?</p>
 	<input type="radio" name="app_proc">1
 	<input type="radio" name="app_proc">2
 	<input type="radio" name="app_proc">3
@@ -100,8 +154,253 @@ $(document).ready(function(){
 	<input type="radio" name="app_proc">5
 	</span>
 	</div>
-	
-
+</div>
+</fieldset>
+	<br><br>
+<fieldset class="form-group">	
+<div><b>Uni-Assist Guidance or Information</b>
+	<p><br>Are you aware of common Application Portal for German Universities named Uni-Assist?</p>
+	<input type="radio" id="Uni_assist1" name="Uni_assist">Yes
+	<input type="radio" id="Uni_assist2" name="Uni_assist">No
+	<br>
+	<div id="uni_assist_r"><span>
+	<p>How much hard was it to create an application in uni-assist for a university and submit?</p>
+	<input type="radio" name="Uni_assist_app_r">1
+	<input type="radio" name="Uni_assist_app_r">2
+	<input type="radio" name="Uni_assist_app_r">3
+	<input type="radio" name="Uni_assist_app_r">4
+	<input type="radio" name="Uni_assist_app_r">5
+	<br><br>
+	<p>How do rate the assistance provided by the Uni-Assist coordinators during your process of application?</p>
+	<input type="radio" name="Uni_assist_info">1
+	<input type="radio" name="Uni_assist_info">2
+	<input type="radio" name="Uni_assist_info">3
+	<input type="radio" name="Uni_assist_info">4
+	<input type="radio" name="Uni_assist_info">5
+	<br><br>
+	<p>How much helpful were the webinars conducted by Uni-Assist to understand the process of admission into German Universities? </p>
+	<input type="radio" name="Uni_assist_webinar">1
+	<input type="radio" name="Uni_assist_webinar">2
+	<input type="radio" name="Uni_assist_webinar">3
+	<input type="radio" name="Uni_assist_webinar">4
+	<input type="radio" name="Uni_assist_webinar">5
+	</span>
+	</div>
+</div>
+</fieldset>
+	<br><br>
+<fieldset class="form-group">
+<div><b>Visa Related Issues</b>
+	<p><br>How hard do you find the higher studies visa process to Germany compared to other countries?</p>
+	<input type="radio" name="Visa_Process_r">1
+	<input type="radio" name="Visa_Process_r">2
+	<input type="radio" name="Visa_Process_r">3
+	<input type="radio" name="Visa_Process_r">4
+	<input type="radio" name="Visa_Process_r">5
+	<br><br>
+	<p>How much difficulty did you face in understanding the German Student VISA application process from the German consulate websites in your home country?</p>
+	<input type="radio" name="Visa_Process_website">1
+	<input type="radio" name="Visa_Process_website">2
+	<input type="radio" name="Visa_Process_website">3
+	<input type="radio" name="Visa_Process_website">4
+	<input type="radio" name="Visa_Process_website">5
+	<br><br>
+	<p>How helpful were the German Consulate Officials during the entire VISA procedure?</p>
+	<input type="radio" name="Visa_Process_Consulate">1
+	<input type="radio" name="Visa_Process_Consulate">2
+	<input type="radio" name="Visa_Process_Consulate">3
+	<input type="radio" name="Visa_Process_Consulate">4
+	<input type="radio" name="Visa_Process_Consulate">5
+	<br><br>
+	<p>How do you rate the responsiveness of German Consulates when it comes to troubleshooting enquires regarding VISA application?</p>
+	<input type="radio" name="Visa_Process_Response">1
+	<input type="radio" name="Visa_Process_Response">2
+	<input type="radio" name="Visa_Process_Response">3
+	<input type="radio" name="Visa_Process_Response">4
+	<input type="radio" name="Visa_Process_Response">5
+	<br><br>
+</div>
+</fieldset>
+<fieldset class="form-group">
+<div><b>Availability of funding</b>
+	<p><br>How much hard was it to find a course of your choice with Complete Funding or No Tuition Fees?</p>
+	<input type="radio" name="Tuition_Fee">1
+	<input type="radio" name="Tuition_Fee">2
+	<input type="radio" name="Tuition_Fee">3
+	<input type="radio" name="Tuition_Fee">4
+	<input type="radio" name="Tuition_Fee">5
+	<br><br>
+	<p>How do you rate the level of easiness in finding funding opportunities?</p>
+	<input type="radio" name="Funding_Opp">1
+	<input type="radio" name="Funding_Opp">2
+	<input type="radio" name="Funding_Opp">3
+	<input type="radio" name="Funding_Opp">4
+	<input type="radio" name="Funding_Opp">5
+	<br><br>
+</div>
+</fieldset>
+<fieldset class="form-group">
+<div><b>Accommodation related problems</b>
+	<p><br>How hard was it to find accommodation in the place of your study?</p>
+	<input type="radio" name="Accommodation">1
+	<input type="radio" name="Accommodation">2
+	<input type="radio" name="Accommodation">3
+	<input type="radio" name="Accommodation">4
+	<input type="radio" name="Accommodation">5
+	<br><br>
+	<p>How much helpful was the information provided on University website or Universities Database daad.de about accommodation?</p>
+	<input type="radio" name="Accommodation_info">1
+	<input type="radio" name="Accommodation_info">2
+	<input type="radio" name="Accommodation_info">3
+	<input type="radio" name="Accommodation_info">4
+	<input type="radio" name="Accommodation_info">5
+	<br><br>
+	<p>How much helpful were the officials at International Office in suggesting to get accommodation?</p>
+	<input type="radio" name="Accommodation_sugg">1
+	<input type="radio" name="Accommodation_sugg">2
+	<input type="radio" name="Accommodation_sugg">3
+	<input type="radio" name="Accommodation_sugg">4
+	<input type="radio" name="Accommodation_sugg">5
+	<br><br>
+</div>
+</fieldset>
+<fieldset class="form-group">
+<div><b>Studentenwerk</b>
+	<p><br>Are you aware of &#145Studentenwerk&#146, an association that provides opportunities for living and arrival assistance for students?</p>
+	<input type="radio" id="Studentenwerk1" name="Studentenwerk">Yes
+	<input type="radio" id="Studentenwerk2" name="Studentenwerk">No
+	<br>
+	<div id="Studentenwerk"><span>
+	<p>How do you rate the easiness in application procedure for studentenwerk provided accommodation?</p>
+	<input type="radio" name="Studentenwerk_app">1
+	<input type="radio" name="Studentenwerk_app">2
+	<input type="radio" name="Studentenwerk_app">3
+	<input type="radio" name="Studentenwerk_app">4
+	<input type="radio" name="Studentenwerk_app">5
+	<br><br>
+	<p>How do you rate the responsiveness of officials at Studentenwerk regarding your application?</p>
+	<input type="radio" name="Studentenwerk_resp">1
+	<input type="radio" name="Studentenwerk_resp">2
+	<input type="radio" name="Studentenwerk_resp">3
+	<input type="radio" name="Studentenwerk_resp">4
+	<input type="radio" name="Studentenwerk_resp">5
+	<br><br>
+	<p>How helpful do you find the information provided on the Studentenwerk website?</p>
+	<input type="radio" name="Studentenwerk_info">1
+	<input type="radio" name="Studentenwerk_info">2
+	<input type="radio" name="Studentenwerk_info">3
+	<input type="radio" name="Studentenwerk_info">4
+	<input type="radio" name="Studentenwerk_info">5	
+	</span>
+	</div>
+	<br><br>
+</div>
+</fieldset>
+<fieldset class="form-group">
+<div><b>International Office</b>
+	<p><br>How much ease did you found the enrollment process of the University?</p>
+	<input type="radio" name="Enrollment_process">1
+	<input type="radio" name="Enrollment_process">2
+	<input type="radio" name="Enrollment_process">3
+	<input type="radio" name="Enrollment_process">4
+	<input type="radio" name="Enrollment_process">5
+	<br><br>
+	<p>How do you rate the guidance provided by the International Office?</p>
+	<input type="radio" name="International_guide">1
+	<input type="radio" name="International_guide">2
+	<input type="radio" name="International_guide">3
+	<input type="radio" name="International_guide">4
+	<input type="radio" name="International_guide">5
+	<br><br>
+	<p>How do you rate the responsiveness of officials at the International Office?</p>
+	<input type="radio" name="International_resp">1
+	<input type="radio" name="International_resp">2
+	<input type="radio" name="International_resp">3
+	<input type="radio" name="International_resp">4
+	<input type="radio" name="International_resp">5
+	<br><br>
+</div>
+</fieldset>
+<fieldset class="form-group">
+<div><b>College Registration Process</b>
+	<p><br>How much do you rate the assistance provided by the International Office during registration Process?</p>
+	<input type="radio" name="International_assis">1
+	<input type="radio" name="International_assis">2
+	<input type="radio" name="International_assis">3
+	<input type="radio" name="International_assis">4
+	<input type="radio" name="International_assis">5
+	<br><br>
+	<p>How hard was it to register in the University upon the arrival from your Home country?</p>
+	<input type="radio" name="University_reg">1
+	<input type="radio" name="University_reg">2
+	<input type="radio" name="University_reg">3
+	<input type="radio" name="University_reg">4
+	<input type="radio" name="University_reg">5
+	<br><br>
+</div>
+</fieldset>
+<fieldset class="form-group">
+<div><b>Arrival Support</b>
+	<p><br>How much do you rate the arrival assistance provided by the University or the Studentenwerk?</p>
+	<input type="radio" name="Arrival_assis">1
+	<input type="radio" name="Arrival_assis">2
+	<input type="radio" name="Arrival_assis">3
+	<input type="radio" name="Arrival_assis">4
+	<input type="radio" name="Arrival_assis">5
+	<br><br>
+	<p>How do you rate the responsiveness of the International Office or Studentenwerk Team regarding the requests for arrival assistance?</p>
+	<input type="radio" name="IO_Arrival_assis">1
+	<input type="radio" name="IO_Arrival_assis">2
+	<input type="radio" name="IO_Arrival_assis">3
+	<input type="radio" name="IO_Arrival_assis">4
+	<input type="radio" name="IO_Arrival_assis">5
+	<br><br>
+</div>
+</fieldset>
+<fieldset class="form-group">
+<div><b>Language Related Problems</b>
+	<p><br>How do you rate the problems associated with language during the Initial days of your arrival?</p>
+	<input type="radio" name="Language_Pro">1
+	<input type="radio" name="Language_Pro">2
+	<input type="radio" name="Language_Pro">3
+	<input type="radio" name="Language_Pro">4
+	<input type="radio" name="Language_Pro">5
+	<br><br>
+	<p>How much helpful were the German courses that you took part in your Home country helped you upon arrival in Germany? </p>
+	<input type="radio" name="German_Course_HC">1
+	<input type="radio" name="German_Course_HC">2
+	<input type="radio" name="German_Course_HC">3
+	<input type="radio" name="German_Course_HC">4
+	<input type="radio" name="German_Course_HC">5
+	<br><br>
+	<p>How hard it was to learn the German language?</p>
+	<input type="radio" name="German_language">1
+	<input type="radio" name="German_language">2
+	<input type="radio" name="German_language">3
+	<input type="radio" name="German_language">4
+	<input type="radio" name="German_language">5
+	<br><br>
+</div>
+</fieldset>
+<fieldset class="form-group">
+<div><b>Guidance from alumni of university of choice.</b>
+	<p><br>How do you rate the assistance provided by the alumni before getting admission from the University?</p>
+	<input type="radio" name="Alumni_assis">1
+	<input type="radio" name="Alumni_assis">2
+	<input type="radio" name="Alumni_assis">3
+	<input type="radio" name="Alumni_assis">4
+	<input type="radio" name="Alumni_assis">5
+	</label>
+	<br><br>
+	<p>How hard it was to find alumni from your chosen University for assistance?</p>
+	<input type="radio" name="Finding_Alumni">1
+	<input type="radio" name="Finding_Alumni">2
+	<input type="radio" name="Finding_Alumni">3
+	<input type="radio" name="Finding_Alumni">4
+	<input type="radio" name="Finding_Alumni">5
+	<br><br>
+</div>
+</fieldset>
 </div>
 </body>
 </html>
