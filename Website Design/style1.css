@@ -10,7 +10,7 @@
 	align-items: center;
 }
 
-.btn .btn-default {
+.btn .btn-warning {
 	background-color: #ddcbcb;
 }
 
@@ -26,3 +26,11 @@
 	font:16px/26px Georgia, Garamond, Serif;
 	overflow:auto; 
 }
+.page1{
+    background-image: url(Images/2.jpg);
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
