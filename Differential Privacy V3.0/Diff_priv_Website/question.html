@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> A Practical Approach to achieve Differential Privacy</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#daad1").click(function(){
+        $("#panel").slideDown("slow");
+    });
+    $("#daad2").click(function(){
+        $("#panel").slideUp("slow");
+    });
+
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#RD_Entry1").click(function(){
+        $("#panel1").slideDown("slow");
+    });
+    $("#RD_Entry2").click(function(){
+        $("#panel1").slideUp("slow");
+    });
+
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#Uni_assist1").click(function(){
+        $("#uni_assist_r").slideDown("slow");
+    });
+    $("#Uni_assist2").click(function(){
+        $("#uni_assist_r").slideUp("slow");
+    });
+
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#Studentenwerk1").click(function(){
+        $("#Studentenwerk").slideDown("slow");
+    });
+    $("#Studentenwerk2").click(function(){
+        $("#Studentenwerk").slideUp("slow");
+    });
+
+});
+</script>
+
+</head>
+<body>
+
+<section id="top-area">
+	<div class="container">
+		<div class="row">
+			<div class="intro-text">
+			<br><br>
+			<span class="name1">A Practical Approach to achieve Differential Privacy</span>
+			<br>
+			<span class="name2">Give your ratings in range of 1-5 </span>
+			</div>
+		</div>
+	</div>
+</section>
+<form action="thankyou.html" method="POST">
+<section class="container" id="rest">
+            <div id="que_container" class="wizard" novalidate="novalidate">
+    <fieldset class="form-group">
+    	<div> <b class="form1 ques"><p>Select your Country</p></b>
+   <select class="form1 newques" name="countries" required>
+   	<option value="">None</option>
+	<option value="AF">Afghanistan</option>
+	<option value="AX">&#197land Islands</option>
+	<option value="AL">Albania</option>
+	<option value="DZ">Algeria</option>
+	<option value="AS">American Samoa</option>
+	<option value="AD">Andorra</option>
+	<option value="AO">Angola</option>
+	<option value="AI">Anguilla</option>
+	<option value="AQ">Antarctica</option>
+	<option value="AG">Antigua and Barbuda</option>
+	<option value="AR">Argentina</option>
+	<option value="AM">Armenia</option>
+	<option value="AW">Aruba</option>
+	<option value="AU">Australia</option>
+	<option value="AT">Austria</option>
+	<option value="AZ">Azerbaijan</option>
+	<option value="BS">Bahamas</option>
+	<option value="BH">Bahrain</option>
+	<option value="BD">Bangladesh</option>
+	<option value="BB">Barbados</option>
+	<option value="BY">Belarus</option>
+	<option value="BE">Belgium</option>
+	<option value="BZ">Belize</option>
+	<option value="BJ">Benin</option>
+	<option value="BM">Bermuda</option>
+	<option value="BT">Bhutan</option>
+	<option value="BO">Bolivia, Plurinational State of</option>
+	<option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+	<option value="BA">Bosnia and Herzegovina</option>
+	<option value="BW">Botswana</option>
+	<option value="BV">Bouvet Island</option>
+	<option value="BR">Brazil</option>
+	<option value="IO">British Indian Ocean Territory</option>
+	<option value="BN">Brunei Darussalam</option>
+	<option value="BG">Bulgaria</option>
+	<option value="BF">Burkina Faso</option>
+	<option value="BI">Burundi</option>
+	<option value="KH">Cambodia</option>
+	<option value="CM">Cameroon</option>
+	<option value="CA">Canada</option>
+	<option value="CV">Cape Verde</option>
+	<option value="KY">Cayman Islands</option>
+	<option value="CF">Central African Republic</option>
+	<option value="TD">Chad</option>
+	<option value="CL">Chile</option>
+	<option value="CN">China</option>
+	<option value="CX">Christmas Island</option>
+	<option value="CC">Cocos (Keeling) Islands</option>
+	<option value="CO">Colombia</option>
+	<option value="KM">Comoros</option>
+	<option value="CG">Congo</option>
+	<option value="CD">Congo, the Democratic Republic of the</option>
+	<option value="CK">Cook Islands</option>
+	<option value="CR">Costa Rica</option>
+	<option value="CI">Côte d'Ivoire</option>
+	<option value="HR">Croatia</option>
+	<option value="CU">Cuba</option>
+	<option value="CW">Curaçao</option>
+	<option value="CY">Cyprus</option>
+	<option value="CZ">Czech Republic</option>
+	<option value="DK">Denmark</option>
+	<option value="DJ">Djibouti</option>
+	<option value="DM">Dominica</option>
+	<option value="DO">Dominican Republic</option>
+	<option value="EC">Ecuador</option>
+	<option value="EG">Egypt</option>
+	<option value="SV">El Salvador</option>
+	<option value="GQ">Equatorial Guinea</option>
+	<option value="ER">Eritrea</option>
+	<option value="EE">Estonia</option>
+	<option value="ET">Ethiopia</option>
+	<option value="FK">Falkland Islands (Malvinas)</option>
+	<option value="FO">Faroe Islands</option>
+	<option value="FJ">Fiji</option>
+	<option value="FI">Finland</option>
+	<option value="FR">France</option>
+	<option value="GF">French Guiana</option>
+	<option value="PF">French Polynesia</option>
+	<option value="TF">French Southern Territories</option>
+	<option value="GA">Gabon</option>
+	<option value="GM">Gambia</option>
+	<option value="GE">Georgia</option>
+	<option value="GH">Ghana</option>
+	<option value="GI">Gibraltar</option>
+	<option value="GR">Greece</option>
+	<option value="GL">Greenland</option>
+	<option value="GD">Grenada</option>
+	<option value="GP">Guadeloupe</option>
+	<option value="GU">Guam</option>
+	<option value="GT">Guatemala</option>
+	<option value="GG">Guernsey</option>
+	<option value="GN">Guinea</option>
+	<option value="GW">Guinea-Bissau</option>
+	<option value="GY">Guyana</option>
+	<option value="HT">Haiti</option>
+	<option value="HM">Heard Island and McDonald Islands</option>
+	<option value="VA">Holy See (Vatican City State)</option>
+	<option value="HN">Honduras</option>
+	<option value="HK">Hong Kong</option>
+	<option value="HU">Hungary</option>
+	<option value="IS">Iceland</option>
+	<option value="IN">India</option>
+	<option value="ID">Indonesia</option>
+	<option value="IR">Iran, Islamic Republic of</option>
+	<option value="IQ">Iraq</option>
+	<option value="IE">Ireland</option>
+	<option value="IM">Isle of Man</option>
+	<option value="IL">Israel</option>
+	<option value="IT">Italy</option>
+	<option value="JM">Jamaica</option>
+	<option value="JP">Japan</option>
+	<option value="JE">Jersey</option>
+	<option value="JO">Jordan</option>
+	<option value="KZ">Kazakhstan</option>
+	<option value="KE">Kenya</option>
+	<option value="KI">Kiribati</option>
+	<option value="KP">Korea, Democratic People's Republic of</option>
+	<option value="KR">Korea, Republic of</option>
+	<option value="KW">Kuwait</option>
+	<option value="KG">Kyrgyzstan</option>
+	<option value="LA">Lao People's Democratic Republic</option>
+	<option value="LV">Latvia</option>
+	<option value="LB">Lebanon</option>
+	<option value="LS">Lesotho</option>
+	<option value="LR">Liberia</option>
+	<option value="LY">Libya</option>
+	<option value="LI">Liechtenstein</option>
+	<option value="LT">Lithuania</option>
+	<option value="LU">Luxembourg</option>
+	<option value="MO">Macao</option>
+	<option value="MK">Macedonia, the former Yugoslav Republic of</option>
+	<option value="MG">Madagascar</option>
+	<option value="MW">Malawi</option>
+	<option value="MY">Malaysia</option>
+	<option value="MV">Maldives</option>
+	<option value="ML">Mali</option>
+	<option value="MT">Malta</option>
+	<option value="MH">Marshall Islands</option>
+	<option value="MQ">Martinique</option>
+	<option value="MR">Mauritania</option>
+	<option value="MU">Mauritius</option>
+	<option value="YT">Mayotte</option>
+	<option value="MX">Mexico</option>
+	<option value="FM">Micronesia, Federated States of</option>
+	<option value="MD">Moldova, Republic of</option>
+	<option value="MC">Monaco</option>
+	<option value="MN">Mongolia</option>
+	<option value="ME">Montenegro</option>
+	<option value="MS">Montserrat</option>
+	<option value="MA">Morocco</option>
+	<option value="MZ">Mozambique</option>
+	<option value="MM">Myanmar</option>
+	<option value="NA">Namibia</option>
+	<option value="NR">Nauru</option>
+	<option value="NP">Nepal</option>
+	<option value="NL">Netherlands</option>
+	<option value="NC">New Caledonia</option>
+	<option value="NZ">New Zealand</option>
+	<option value="NI">Nicaragua</option>
+	<option value="NE">Niger</option>
+	<option value="NG">Nigeria</option>
+	<option value="NU">Niue</option>
+	<option value="NF">Norfolk Island</option>
+	<option value="MP">Northern Mariana Islands</option>
+	<option value="NO">Norway</option>
+	<option value="OM">Oman</option>
+	<option value="PK">Pakistan</option>
+	<option value="PW">Palau</option>
+	<option value="PS">Palestinian Territory, Occupied</option>
+	<option value="PA">Panama</option>
+	<option value="PG">Papua New Guinea</option>
+	<option value="PY">Paraguay</option>
+	<option value="PE">Peru</option>
+	<option value="PH">Philippines</option>
+	<option value="PN">Pitcairn</option>
+	<option value="PL">Poland</option>
+	<option value="PT">Portugal</option>
+	<option value="PR">Puerto Rico</option>
+	<option value="QA">Qatar</option>
+	<option value="RE">Réunion</option>
+	<option value="RO">Romania</option>
+	<option value="RU">Russian Federation</option>
+	<option value="RW">Rwanda</option>
+	<option value="BL">Saint Barthélemy</option>
+	<option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+	<option value="KN">Saint Kitts and Nevis</option>
+	<option value="LC">Saint Lucia</option>
+	<option value="MF">Saint Martin (French part)</option>
+	<option value="PM">Saint Pierre and Miquelon</option>
+	<option value="VC">Saint Vincent and the Grenadines</option>
+	<option value="WS">Samoa</option>
+	<option value="SM">San Marino</option>
+	<option value="ST">Sao Tome and Principe</option>
+	<option value="SA">Saudi Arabia</option>
+	<option value="SN">Senegal</option>
+	<option value="RS">Serbia</option>
+	<option value="SC">Seychelles</option>
+	<option value="SL">Sierra Leone</option>
+	<option value="SG">Singapore</option>
+	<option value="SX">Sint Maarten (Dutch part)</option>
+	<option value="SK">Slovakia</option>
+	<option value="SI">Slovenia</option>
+	<option value="SB">Solomon Islands</option>
+	<option value="SO">Somalia</option>
+	<option value="ZA">South Africa</option>
+	<option value="GS">South Georgia and the South Sandwich Islands</option>
+	<option value="SS">South Sudan</option>
+	<option value="ES">Spain</option>
+	<option value="LK">Sri Lanka</option>
+	<option value="SD">Sudan</option>
+	<option value="SR">Suriname</option>
+	<option value="SJ">Svalbard and Jan Mayen</option>
+	<option value="SZ">Swaziland</option>
+	<option value="SE">Sweden</option>
+	<option value="CH">Switzerland</option>
+	<option value="SY">Syrian Arab Republic</option>
+	<option value="TW">Taiwan, Province of China</option>
+	<option value="TJ">Tajikistan</option>
+	<option value="TZ">Tanzania, United Republic of</option>
+	<option value="TH">Thailand</option>
+	<option value="TL">Timor-Leste</option>
+	<option value="TG">Togo</option>
+	<option value="TK">Tokelau</option>
+	<option value="TO">Tonga</option>
+	<option value="TT">Trinidad and Tobago</option>
+	<option value="TN">Tunisia</option>
+	<option value="TR">Turkey</option>
+	<option value="TM">Turkmenistan</option>
+	<option value="TC">Turks and Caicos Islands</option>
+	<option value="TV">Tuvalu</option>
+	<option value="UG">Uganda</option>
+	<option value="UA">Ukraine</option>
+	<option value="AE">United Arab Emirates</option>
+	<option value="GB">United Kingdom</option>
+	<option value="US">United States</option>
+	<option value="UM">United States Minor Outlying Islands</option>
+	<option value="UY">Uruguay</option>
+	<option value="UZ">Uzbekistan</option>
+	<option value="VU">Vanuatu</option>
+	<option value="VE">Venezuela, Bolivarian Republic of</option>
+	<option value="VN">Viet Nam</option>
+	<option value="VG">Virgin Islands, British</option>
+	<option value="VI">Virgin Islands, U.S.</option>
+	<option value="WF">Wallis and Futuna</option>
+	<option value="EH">Western Sahara</option>
+	<option value="YE">Yemen</option>
+	<option value="ZM">Zambia</option>
+	<option value="ZW">Zimbabwe</option>
+</select>
+
+    	</div>
+    </fieldset> 
+    
+     <fieldset class="form-group" >
+	<div><b class="form1 ques"><p>Select your Age Group </p></b>
+    <select class="form1 newques" name="age" required>
+    <option value="">None</option>
+	<option value="15-">Below 15</option>
+	<option value="15+">15-24</option>
+	<option value="25+">25-34</option>
+	<option value="35+">35-50</option>
+	<option value="50+">50-64</option>
+	<option value="65+">65+</option>
+	</select>
+    </div>
+   
+    </fieldset>
+                       
+           
+    <fieldset class="form-group"><br><br>
+	<div><b class="ques">Selecting your Course</b>
+	<p><b>How do you rate the level of difficulty in finding a course of your choice</b></p>
+	<input type="radio" name="course" value="1" required> 1 <i> (Very Easy) </i>&nbsp &nbsp &nbsp
+	<input type="radio" name="course" value="2"> 2 <i> (Easy) </i>&nbsp &nbsp &nbsp
+	<input type="radio" name="course" value="3"> 3 <i> (Moderate) </i>&nbsp &nbsp &nbsp
+	<input type="radio" name="course" value="4"> 4 <i> (Diffcult) </i>&nbsp &nbsp &nbsp
+	<input type="radio" name="course" value="5"> 5 <i> (More Diffcult) </i>&nbsp &nbsp &nbsp
+	<br>
+	
+	<p><b>How hard was is it to find a course of your choice?</b></p>
+	<input type="radio" name="course_lang" value="1" required> 1 <i>(Very Easy)</i> &nbsp &nbsp
+	<input type="radio" name="course_lang" value="2"> 2 <i>(Easy)</i> &nbsp &nbsp
+	<input type="radio" name="course_lang" value="3"> 3 <i>(Moderate)</i> &nbsp &nbsp
+	<input type="radio" name="course_lang" value="4"> 4 <i>(Hard)</i> &nbsp &nbsp
+	<input type="radio" name="course_lang" value="5"> 5 <i>(Very Hard)</i> &nbsp &nbsp 
+	<br>
+	
+</div>
+</fieldset>
+<br><br>
+<fieldset class="form-group">
+<div><b class="ques">Information provided on the Universities Database - DAAD</b> 
+	<p><b>Are you aware of DAAD - German National Academic Database?</b> </p>
+	<input type="radio" id="daad1" name="daad" value="1" required> Yes   &nbsp &nbsp
+	<input type="radio" id="daad2" name="daad" value="0"> No   &nbsp &nbsp
+	<div id="panel"><span>
+	<p><b>How do you rate the information provided on the DAAD website?</b></p>
+	<input type="radio" name="daadrate" value="1"> 1 <i>(Very Useful)</i> &nbsp &nbsp
+	<input type="radio" name="daadrate" value="2"> 2 <i>(Useful)</i> &nbsp &nbsp
+	<input type="radio" name="daadrate" value="3"> 3 <i>(Serves Purpose)</i> &nbsp &nbsp
+	<input type="radio" name="daadrate" value="4"> 4 <i>(Needs Improvement)</i> &nbsp &nbsp
+	<input type="radio" name="daadrate" value="5"> 5 <i>(Not Useful)</i> &nbsp &nbsp
+	<br>
+	<p><b>How easy was it easy to search for a University using DAAD website? </b></p>
+	<input type="radio" name="daadsearch" value="1"> 1 <i>(Very Easy)</i> &nbsp &nbsp 
+	<input type="radio" name="daadsearch" value="2"> 2 <i>(Easy)</i> &nbsp &nbsp
+	<input type="radio" name="daadsearch" value="3"> 3 <i>(Moderate)</i> &nbsp &nbsp
+	<input type="radio" name="daadsearch" value="4"> 4 <i>(Hard)</i> &nbsp &nbsp
+	<input type="radio" name="daadsearch" value="5"> 5 <i>(Very Hard)</i> &nbsp &nbsp
+	<br>
+	</span>
+	</div>
+</div>
+</fieldset>
+<br><br><br>
+<fieldset class="form-group">
+<div><b class="ques">Information provided on University Website</b>
+	<p><b>How do you rate the information provided on the chosen University website? </b></p>
+	<input type="radio" name="Universityrate" value="1" required> 1 <i>(Very Useful)</i> &nbsp &nbsp
+	<input type="radio" name="Universityrate" value="2"> 2 <i>(Useful)</i> &nbsp &nbsp
+	<input type="radio" name="Universityrate" value="3"> 3 <i>(Serves Purpose)</i> &nbsp &nbsp 
+	<input type="radio" name="Universityrate" value="4"> 4 <i>(Needs Improvement)</i> &nbsp &nbsp
+	<input type="radio" name="Universityrate" value="5"> 5 <i>(Not Useful)</i> &nbsp &nbsp
+	<br>
+	
+</div>
+</fieldset>
+<br><br>
+<fieldset class="form-group">
+<div><b class="ques"> Application Procedures</b>
+	<p><b>Are you aware of different Application Procedures (Restricted &#38 Open entry courses)?</b></p>
+	<input type="radio" id="RD_Entry1" name="RD_Entry" value="1" required> Yes   &nbsp &nbsp
+	<input type="radio" id="RD_Entry2" name="RD_Entry" value="0"> No  &nbsp &nbsp
+	<div id="panel1"><span>
+	<p><b>How do you rate your level of comfort regarding the application procedures for the universities?</b></p>
+	<input type="radio" name="app_proc" value="1"> 1 <i>(Very Comfortable)</i> &nbsp &nbsp
+	<input type="radio" name="app_proc" value="2"> 2 <i>(Comfortable)</i> &nbsp &nbsp
+	<input type="radio" name="app_proc" value="3"> 3 <i>(Little Problematic)</i> &nbsp &nbsp
+	<input type="radio" name="app_proc" value="4"> 4 <i>(Needs Assistance)</i> &nbsp &nbsp
+	<input type="radio" name="app_proc" value="5"> 5 <i>(Not Comfortable) </i> &nbsp &nbsp
+	</span>
+	</div>
+</div>
+</fieldset>
+<br><br>
+<fieldset class="form-group">	
+<div><b class="ques">UNI-ASSIST Guidance and Information</b>
+	<p><b>Are you aware of common Application Portal for German Universities named UNI-ASSIST?</b></p>
+	<input type="radio" id="Uni_assist1" name="Uni_assist" value="1" required> Yes  &nbsp &nbsp
+	<input type="radio" id="Uni_assist2" name="Uni_assist" value="0"> No  &nbsp &nbsp
+	<br>
+	<div id="uni_assist_r"><span>
+	<p><b>How hard was it to create applications in UNI-ASSIST? </b></p>
+	<input type="radio" name="Uni_assist_app_r" value="1"> 1 <i>(Very Easy)</i> &nbsp &nbsp
+	<input type="radio" name="Uni_assist_app_r" value="2"> 2 <i>(Easy)</i> &nbsp &nbsp
+	<input type="radio" name="Uni_assist_app_r" value="3"> 3 <i>(Moderate)</i> &nbsp &nbsp
+	<input type="radio" name="Uni_assist_app_r" value="4"> 4 <i>(Difficult)</i> &nbsp &nbsp
+	<input type="radio" name="Uni_assist_app_r" value="5"> 5 <i>(Very Difficult)</i> &nbsp &nbsp
+	<br>
+	<p><b>How do you rate the assistance provided by the UNI-ASSIST coordinators during your process of application?</b></p>
+	<input type="radio" name="Uni_assist_info" value="1"> 1 <i>(Very Good)</i> &nbsp &nbsp
+	<input type="radio" name="Uni_assist_info" value="2"> 2 <i>(Good)</i> &nbsp &nbsp
+	<input type="radio" name="Uni_assist_info" value="3"> 3 <i>(Average)</i> &nbsp &nbsp
+	<input type="radio" name="Uni_assist_info" value="4"> 4 <i>(Poor)</i> &nbsp &nbsp
+	<input type="radio" name="Uni_assist_info" value="5"> 5 <i>(Very Poor)</i> &nbsp &nbsp
+	<br>
+	<p><b>How helpful were the webinars conducted by Uni-Assist to understand the process of admission into German Universities?</b></p>
+	<input type="radio" name="Uni_assist_webinar" value="1"> 1 <i>(Highly Useful)</i> &nbsp &nbsp
+	<input type="radio" name="Uni_assist_webinar" value="2"> 2 <i>(Useful)</i> &nbsp &nbsp
+	<input type="radio" name="Uni_assist_webinar" value="3"> 3 <i>(Average)</i> &nbsp &nbsp
+	<input type="radio" name="Uni_assist_webinar" value="4"> 4 <i>(Needs Improvement)</i> &nbsp &nbsp
+	<input type="radio" name="Uni_assist_webinar" value="5"> 5 <i>(Not Useful)</i> &nbsp &nbsp
+	</span>
+	</div>
+</div>
+</fieldset>
+	<br><br>
+	
+<fieldset class="form-group">
+<div><b class="ques">Student Visa Related Issues</b>
+	<p><b>How do you find the Visa Process to Germany compared to other countries?</b></p>
+	<input type="radio" name="Visa_Process_r" value="1" required> 1 <i>(Very Complicated)</i> &nbsp &nbsp
+	<input type="radio" name="Visa_Process_r" value="2"> 2 <i>(Complicated)</i> &nbsp &nbsp
+	<input type="radio" name="Visa_Process_r" value="3"> 3 <i>(Average)</i> &nbsp &nbsp
+	<input type="radio" name="Visa_Process_r" value="4"> 4 <i>(Not So Complictaed)</i> &nbsp &nbsp
+	<input type="radio" name="Visa_Process_r" value="5"> 5 <i>(Easy)</i> &nbsp &nbsp
+	<br>
+	
+	<p><b>How helpful were the German Consulate Officials during the entire VISA procedure?</b></p>
+	<input type="radio" name="Visa_Process_Consulate" value="1" required> 1 <i>(Very Helpful)</i> &nbsp &nbsp
+	<input type="radio" name="Visa_Process_Consulate" value="2"> 2 <i>(Helpful)</i> &nbsp &nbsp
+	<input type="radio" name="Visa_Process_Consulate" value="3"> 3 <i>(Average)</i> &nbsp &nbsp
+	<input type="radio" name="Visa_Process_Consulate" value="4"> 4 <i>(Needs Improvement)</i> &nbsp &nbsp
+	<input type="radio" name="Visa_Process_Consulate" value="5"> 5 <i>(Not Useful)</i> &nbsp &nbsp
+	<br>
+
+	<p><b>How do you rate the German Consulate Officials when it comes to troubleshooting enquires regarding VISA application?</b></p>
+	<input type="radio" name="Visa_Process_Response" value="1" required> 1 <i>(Very Highly Responsive)</i> &nbsp &nbsp
+	<input type="radio" name="Visa_Process_Response" value="2"> 2 <i>(Highly Responsive)</i> &nbsp &nbsp
+	<input type="radio" name="Visa_Process_Response" value="3"> 3 <i>(Moderately Responsive)</i> &nbsp &nbsp
+	<input type="radio" name="Visa_Process_Response" value="4"> 4 <i>(Responsive)</i> &nbsp &nbsp
+	<input type="radio" name="Visa_Process_Response" value="5"> 5 <i>(Not Responsive)</i> &nbsp &nbsp
+	<br>
+</div>
+</fieldset>
+<br><br>
+<fieldset class="form-group">
+<div><b class="ques">Availability of funding</b>
+	<p><b>How hard was it to find a course of your choice with Complete Funding or No Tuition Fees? </b></p>
+	<input type="radio" name="Tuition_Fee" value="1" required> 1 <i>(Very Easy)</i> &nbsp &nbsp
+	<input type="radio" name="Tuition_Fee" value="2"> 2 <i>(Easy)</i> &nbsp &nbsp
+	<input type="radio" name="Tuition_Fee" value="3"> 3 <i>(Moderate)</i> &nbsp &nbsp
+	<input type="radio" name="Tuition_Fee" value="4"> 4 <i>(Difficult)</i> &nbsp &nbsp
+	<input type="radio" name="Tuition_Fee" value="5"> 5 <i>(Very Difficult)</i> &nbsp &nbsp
+	<br>
+	<p><b>How do you rate the level of easiness in finding funding opportunities?</b></p>
+	<input type="radio" name="Funding_Opp" value="1" required> 1 <i>(Very Easy)</i> &nbsp &nbsp
+	<input type="radio" name="Funding_Opp" value="2"> 2 <i>(Easy)</i> &nbsp &nbsp
+	<input type="radio" name="Funding_Opp" value="3"> 3 <i>(Moderate)</i> &nbsp &nbsp
+	<input type="radio" name="Funding_Opp" value="4"> 4 <i>(Hard)</i> &nbsp &nbsp
+	<input type="radio" name="Funding_Opp" value="5"> 5 <i>(Very Hard)</i> &nbsp &nbsp
+	<br>
+</div>
+</fieldset>
+<br><br>
+<fieldset class="form-group">
+<div><b class="ques">Accommodation related problems</b>
+	<p><b>How hard was it to find accommodation in the place of your study?</b></p>
+	<input type="radio" name="Accommodation" value="1" required> 1 <i>(Very Easy)</i> &nbsp &nbsp
+	<input type="radio" name="Accommodation" value="2"> 2 <i>(Easy)</i> &nbsp &nbsp
+	<input type="radio" name="Accommodation" value="3"> 3 <i>(Moderate)</i> &nbsp &nbsp
+	<input type="radio" name="Accommodation" value="4"> 4 <i>(Difficult)</i> &nbsp &nbsp
+	<input type="radio" name="Accommodation" value="5"> 5 <i>(Very Difficult)</i> &nbsp &nbsp
+	<br>
+	<p><b>How helpful was the information provided on University website or Universities Database daad.de about accommodation?</b></p>
+	<input type="radio" name="Accommodation_info" value="1" required> 1 <i>(Very Helpful)</i> &nbsp &nbsp
+	<input type="radio" name="Accommodation_info" value="2"> 2 <i>(Helpful)</i> &nbsp &nbsp
+	<input type="radio" name="Accommodation_info" value="3"> 3 <i>(Average)</i> &nbsp &nbsp
+	<input type="radio" name="Accommodation_info" value="4"> 4 <i>(Needs Improvement)</i> &nbsp &nbsp
+	<input type="radio" name="Accommodation_info" value="5"> 5 <i>(Not Helpful)</i> &nbsp &nbsp
+	<br>
+	<p><b>How much helpful were the officials at International Office in suggesting to get accommodation?</b></p>
+	<input type="radio" name="Accommodation_sugg" value="1" required> 1 <i>(Very Helpful)</i> &nbsp &nbsp
+	<input type="radio" name="Accommodation_sugg" value="2"> 2 <i>(Helpful)</i> &nbsp &nbsp
+	<input type="radio" name="Accommodation_sugg" value="3"> 3 <i>(Average)</i> &nbsp &nbsp
+	<input type="radio" name="Accommodation_sugg" value="4"> 4 <i>(Needs Improvement)</i> &nbsp &nbsp
+	<input type="radio" name="Accommodation_sugg" value="5"> 5 <i>(Not Helpful)</i> &nbsp &nbsp
+	<br>
+</div>
+</fieldset>
+<br><br>
+<fieldset class="form-group">
+<div><b class="ques">Studentenwerk</b>
+	<p><b>Are you aware of &#145Studentenwerk&#146, an association that provides opportunities for living and arrival assistance for students? </b></p>
+	<input type="radio" id="Studentenwerk1" name="Studentenwerk" value="1" required> Yes   &nbsp &nbsp
+	<input type="radio" id="Studentenwerk2" name="Studentenwerk" value="0"> No  &nbsp &nbsp
+	<br>
+	<div id="Studentenwerk"><span>
+	<p><b>How do you rate the easiness in application procedure for studentenwerk provided accommodation?</b></p>
+	<input type="radio" name="Studentenwerk_app" value="1"> 1 <i>(Very High)</i> &nbsp &nbsp
+	<input type="radio" name="Studentenwerk_app" value="2"> 2 <i>(High)</i> &nbsp &nbsp
+	<input type="radio" name="Studentenwerk_app" value="3"> 3 <i>(Average)</i> &nbsp &nbsp
+	<input type="radio" name="Studentenwerk_app" value="4"> 4 <i>(Low)</i> &nbsp &nbsp
+	<input type="radio" name="Studentenwerk_app" value="5"> 5 <i>(Very Low)</i> &nbsp &nbsp
+	<br>
+	<p><b>How do you rate the responsiveness of officials at Studentenwerk regarding your application?</b></p>
+	<input type="radio" name="Studentenwerk_resp" value="1"> 1 <i>(Very Highly Responsive)</i> &nbsp &nbsp
+	<input type="radio" name="Studentenwerk_resp" value="2"> 2 <i>(Highly Responsive)</i> &nbsp &nbsp
+	<input type="radio" name="Studentenwerk_resp" value="3"> 3 <i>(Moderately Responsive)</i> &nbsp &nbsp
+	<input type="radio" name="Studentenwerk_resp" value="4"> 4 <i>(Responsive)</i> &nbsp &nbsp
+	<input type="radio" name="Studentenwerk_resp" value="5"> 5 <i>(Not Responsive)</i> &nbsp &nbsp
+	<br>
+	<p><b>How helpful do you find the information provided on the Studentenwerk website?</b></p>
+	<input type="radio" name="Studentenwerk_info" value="1"> 1 <i>(Very Helpful)</i> &nbsp &nbsp
+	<input type="radio" name="Studentenwerk_info" value="2"> 2 <i>(Helpful)</i> &nbsp &nbsp
+	<input type="radio" name="Studentenwerk_info" value="3"> 3 <i>(Average)</i> &nbsp &nbsp
+	<input type="radio" name="Studentenwerk_info" value="4"> 4 <i>(Needs Improvement)</i> &nbsp &nbsp
+	<input type="radio" name="Studentenwerk_info" value="5"> 5 <i>(Not Helpful)</i>  &nbsp &nbsp
+	</span>
+	</div>
+	<br>
+</div>
+</fieldset>
+<br><br>
+<fieldset class="form-group">
+<div><b class="ques">International Office</b>
+	<p><b>How easier did you found the enrollment process of the University?</b></p>
+	<input type="radio" name="Enrollment_process" value="1" required> 1 <i>(Very Easy)</i> &nbsp &nbsp
+	<input type="radio" name="Enrollment_process" value="2"> 2 <i>(Easy)</i> &nbsp &nbsp
+	<input type="radio" name="Enrollment_process" value="3"> 3 <i>(Moderate)</i> &nbsp &nbsp
+	<input type="radio" name="Enrollment_process" value="4"> 4 <i>(Difficult)</i> &nbsp &nbsp
+	<input type="radio" name="Enrollment_process" value="5"> 5 <i>(Very Difficult)</i> &nbsp &nbsp
+	<br>
+	<p><b>How do you rate the guidance provided by the International Office?</b></p>
+	<input type="radio" name="International_guide" value="1" required> 1 <i>(Very Helpful)</i> &nbsp &nbsp
+	<input type="radio" name="International_guide" value="2"> 2 <i>(Helpful)</i> &nbsp &nbsp
+	<input type="radio" name="International_guide" value="3"> 3 <i>(Average)</i> &nbsp &nbsp
+	<input type="radio" name="International_guide" value="4"> 4 <i>(Needs Improvement)</i> &nbsp &nbsp
+	<input type="radio" name="International_guide" value="5"> 5 <i>(Not Helpful)</i> &nbsp &nbsp
+	<br>
+	<p><b>How do you rate the responsiveness of officials at the International Office?</b></p>
+	<input type="radio" name="International_resp" value="1" required> 1 <i>(Very Highly Responsive)</i> &nbsp &nbsp
+	<input type="radio" name="International_resp" value="2"> 2 <i>(Highly Responsive)</i> &nbsp &nbsp
+	<input type="radio" name="International_resp" value="3"> 3 <i>(Moderately Responsive)</i> &nbsp &nbsp
+	<input type="radio" name="International_resp" value="4"> 4 <i>(Responsive)</i> &nbsp &nbsp
+	<input type="radio" name="International_resp" value="5"> 5 <i>(Not Responsive)</i> &nbsp &nbsp
+	<br>
+</div>
+</fieldset>
+<br><br>
+<fieldset class="form-group">
+<div><b class="ques">College Registration Process</b>
+	<p><b>How much do you rate the assistance provided by the International Office during registration Process?</b></p>
+	<input type="radio" name="International_assis" value="1" required> 1 <i>(Very Helpful)</i> &nbsp &nbsp
+	<input type="radio" name="International_assis" value="2"> 2 <i>(Helpful)</i> &nbsp &nbsp
+	<input type="radio" name="International_assis" value="3"> 3 <i>(Average)</i> &nbsp &nbsp
+	<input type="radio" name="International_assis" value="4"> 4 <i>(Needs Improvement)</i> &nbsp &nbsp
+	<input type="radio" name="International_assis" value="5"> 5 <i>(Not Helpful)</i> &nbsp &nbsp
+	<br>
+	<p><b>How hard was it to register in the University upon the arrival from your Home country?</b></p>
+	<input type="radio" name="University_reg" value="1" required> 1 <i>(Very Easy)</i> &nbsp &nbsp
+	<input type="radio" name="University_reg" value="2"> 2 <i>(Easy)</i> &nbsp &nbsp
+	<input type="radio" name="University_reg" value="3"> 3 <i>(Moderate)</i> &nbsp &nbsp
+	<input type="radio" name="University_reg" value="4"> 4 <i>(Difficult)</i> &nbsp &nbsp
+	<input type="radio" name="University_reg" value="5"> 5 <i>(Very Difficult)</i> &nbsp &nbsp
+	<br>
+</div>
+</fieldset>
+
+<br><br>
+<fieldset class="form-group">
+<div><b class="ques">Arrival Support</b>
+	<p><b>How much do you rate the arrival assistance provided by the University or the Studentenwerk?</b></p>
+	<input type="radio" name="Arrival_assis" value="1" required> 1 <i>(Very High)</i> &nbsp &nbsp
+	<input type="radio" name="Arrival_assis" value="2"> 2 <i>(High)</i> &nbsp &nbsp
+	<input type="radio" name="Arrival_assis" value="3"> 3 <i>(Moderate)</i> &nbsp &nbsp
+	<input type="radio" name="Arrival_assis" value="4"> 4 <i>(Low)</i> &nbsp &nbsp
+	<input type="radio" name="Arrival_assis" value="5"> 5 <i>(Very Low)</i> &nbsp &nbsp
+</div>
+</fieldset>
+<br><br>
+<fieldset class="form-group">
+<div><b class="ques">Language Related Problems</b>
+	<p><b>How do you rate the problems associated with language during the Initial days of your arrival?</b></p>
+	<input type="radio" name="Language_Pro" value="1" required> 1 <i>(Very High)</i> &nbsp &nbsp
+	<input type="radio" name="Language_Pro" value="2"> 2 <i>(High)</i> &nbsp &nbsp
+	<input type="radio" name="Language_Pro" value="3"> 3 <i>(Moderate)</i> &nbsp &nbsp
+	<input type="radio" name="Language_Pro" value="4"> 4 <i>(Low)</i> &nbsp &nbsp
+	<input type="radio" name="Language_Pro" value="5"> 5 <i>(Very Low)</i> &nbsp &nbsp
+	<br>
+	<p><b>How hard it was to learn the German language?</b></p>
+	<input type="radio" name="German_language" value="1" required> 1 <i>(Very Easy)</i> &nbsp &nbsp
+	<input type="radio" name="German_language" value="2"> 2 <i>(Easy)</i> &nbsp &nbsp
+	<input type="radio" name="German_language" value="3"> 3 <i>(Moderate)</i> &nbsp &nbsp
+	<input type="radio" name="German_language" value="4"> 4 <i>(Difficult)</i> &nbsp &nbsp
+	<input type="radio" name="German_language" value="5"> 5 <i>(Very Difficult)</i> &nbsp &nbsp
+	<br>
+</div>
+</fieldset>
+<br><br>
+
+            </div>
+
+
+
+<script >
+		$(document).ready(function(){
+ 			$('input[type="radio"]').click(function(){
+ 			var countries = $('select[name=countries] option:selected').text();
+			var age = $('select[name=age] option:selected').text();
+ 			var course = $('input[name=course]:checked').val();
+ 			var course_lang = $('input[name=course_lang]:checked').val();
+			var daad1 = $('input[id=daad1]:checked').val();
+			var daad2 = $('input[id=daad2]:checked').val();
+			var daadrate = $('input[name=daadrate]:checked').val();
+			var daadsearch = $('input[name=daadsearch]:checked').val();
+			var daad;
+			var Universityrate = $('input[name=Universityrate]:checked').val();
+			var RD_Entry1 = $('input[id=RD_Entry1]:checked').val();
+			var RD_Entry2 = $('input[id=RD_Entry2]:checked').val();
+			var app_proc = $('input[name=app_proc]:checked').val();
+			var RD_Entry;
+			var Uni_assist1 = $('input[id=Uni_assist1]:checked').val();
+			var Uni_assist2 = $('input[id=Uni_assist2]:checked').val();
+			var Uni_assist_app_r = $('input[name=Uni_assist_app_r]:checked').val();
+			var Uni_assist_info = $('input[name=Uni_assist_info]:checked').val();
+			var Uni_assist_webinar = $('input[name=Uni_assist_webinar]:checked').val();
+			var Uni_assist;
+			var Visa_Process_r = $('input[name=Visa_Process_r]:checked').val();
+ 			var Visa_Process_Consulate = $('input[name=Visa_Process_Consulate]:checked').val();
+			var Visa_Process_Response = $('input[name=Visa_Process_Response]:checked').val();
+			var Tuition_Fee = $('input[name=Tuition_Fee]:checked').val();
+ 			var Funding_Opp = $('input[name=Funding_Opp]:checked').val();
+ 			var Accommodation = $('input[name=Accommodation]:checked').val();
+ 			var Accommodation_info = $('input[name=Accommodation_info]:checked').val();
+			var Accommodation_sugg = $('input[name=Accommodation_sugg]:checked').val();
+ 			var Studentenwerk1 = $('input[id=Studentenwerk1]:checked').val();
+			var Studentenwerk2 = $('input[id=Studentenwerk2]:checked').val();
+			var Studentenwerk_app = $('input[name=Studentenwerk_app]:checked').val();
+			var Studentenwerk_resp = $('input[name=Studentenwerk_resp]:checked').val();
+			var Studentenwerk_info = $('input[name=Studentenwerk_info]:checked').val();
+			var Studentenwerk;
+			var Enrollment_process = $('input[name=Enrollment_process]:checked').val();
+ 			var International_guide = $('input[name=International_guide]:checked').val();
+			var International_resp = $('input[name=International_resp]:checked').val();
+			var International_assis = $('input[name=International_assis]:checked').val();
+ 			var University_reg = $('input[name=University_reg]:checked').val();
+ 			var Arrival_assis = $('input[name=Arrival_assis]:checked').val();
+ 			var Language_Pro = $('input[name=Language_Pro]:checked').val();
+ 			var German_language = $('input[name=German_language]:checked').val();
+ 			
+				
+			if(daad2== 0) 
+			{ 
+				daad = 0;
+				daadrate = $('input[name=daadrate]').val();
+				daadsearch = $('input[name=daadsearch]').val();
+			}
+			else if (daad1== 1) 
+			{ 
+				daad=1; 
+			}
+ 			
+			if(RD_Entry2== 0) 
+			{ 
+				RD_Entry = 0;
+				app_proc = $('input[name=app_proc]').val();
+			}
+			else if (RD_Entry1== 1) 
+			{ 
+				RD_Entry = 1; 
+			}
+
+			if(Uni_assist2== 0) 
+			{ 
+				Uni_assist = 0;
+				Uni_assist_app_r = $('input[name=Uni_assist_app_r]').val();
+				Uni_assist_info = $('input[name=Uni_assist_info]').val();
+				Uni_assist_webinar = $('input[name=Uni_assist_webinar]').val();
+			}
+			else if (Uni_assist1== 1) 
+			{ 
+				Uni_assist=1; 
+			}
+
+			if(Studentenwerk2== 0) 
+			{ 
+				Studentenwerk = 0;
+				Studentenwerk_app = $('input[name=Studentenwerk_app]').val();
+				Studentenwerk_resp = $('input[name=Studentenwerk_resp]').val();
+				Studentenwerk_info = $('input[name=Studentenwerk_info]').val();
+			}
+			else if (Studentenwerk1== 1) 
+			{ 
+				Studentenwerk=1; 
+			}
+			
+				$.ajax({
+ 				url:"insert.php",
+ 				method:"POST",
+ 				data:{countries,age,course,course_lang,daad,daadrate,daadsearch,Universityrate,RD_Entry,app_proc,Uni_assist,Uni_assist_app_r,Uni_assist_info,Uni_assist_webinar,Visa_Process_r,Visa_Process_Consulate,Visa_Process_Response,Tuition_Fee,Funding_Opp,Accommodation,Accommodation_info,Accommodation_sugg,Studentenwerk,Studentenwerk_app,Studentenwerk_resp,Studentenwerk_info,Enrollment_process,International_guide,International_resp,International_assis,University_reg,Arrival_assis,Language_Pro,German_language},
+ 				success: function(data)
+ 				{
+ 				$('#result').html(data);
+ 				}
+ 				   });
+
+ 			
+	
+  });
+});
+										
+
+</script>	
+
+<div class="container">
+        <div class="col-lg-5"></div>
+        <div class="col-lg-3">
+			<input type="submit" class="btn btn-embossed btn-primary" role="button">
+		</div>
+        <div class="col-lg-4"></div>
+        </div>
+        <br><br>
+        </section>
+ </form>       
+</body>
+</html>
