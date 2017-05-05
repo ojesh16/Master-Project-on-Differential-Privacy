@@ -1,4 +1,4 @@
-Rawdata<- allones$RawData
+Rawdata<- allfours$RawData
 
 ones <- rep(1,100)
 zeros <- rep(0,100)
