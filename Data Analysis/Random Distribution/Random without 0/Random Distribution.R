@@ -1,9 +1,9 @@
-Rawdata<-rawdata_200$Raw_Data
+Rawdata<-allfive$RawData
 
-ones <- rep(1,100)
-zeros <- rep(0,99)
+ones <- rep(1,20)
+zeros <- rep(0,180)
 join <- c(ones, zeros)
-resamplejoin <- sample(join,199)
+resamplejoin <- sample(join,200)
 
 diffpriv1<- data.frame(Rawdata,first_toss=resamplejoin)
 
