@@ -35,3 +35,5 @@ for(x in 1:nrow(diffpriv1)){
   }
 }
 diffpriv1<- data.frame(diffpriv1,Second_toss1)
+mean(diffpriv1$Rawdata)
+mean(diffpriv1$Second_toss1)
